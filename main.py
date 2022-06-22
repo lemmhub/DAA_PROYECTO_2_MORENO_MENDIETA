@@ -45,7 +45,7 @@ def main():
 
 
 
-        grafito = grafoErdosRenyi(nodos, m_erdos)
+        #grafito = grafoErdosRenyi(nodos, m_erdos)
         #grafito.to_graphviz(path + grafito.id + ".gv")
         #grafito.generar_pesos()
         #kruskal = grafito.KruskalD()
@@ -54,17 +54,16 @@ def main():
         #kruskalI.to_graphviz(path + kruskalI.id + ".gv")
         #prim = grafito.Prim()
         #prim.to_graphviz(path + prim.id + ".gv")
-        print(f'\nERDOS')
+        #print(f'\nERDOS')
         #print(f"MST kruskal: {kruskal.costo()}")
         #print(f"MST kruskalI: {kruskalI.costo()}")
         #print(f"MST Prim: {prim.costo()}")
         #Proyecto 5
-        spring(grafito)
 
 
 
 
-        # grafito = grafoGilbert(nodos, p_gilbert, dirigido=False, auto=False)
+        grafito = grafoGilbert(nodos, p_gilbert, dirigido=False, auto=False)
         # grafito.to_graphviz(path + grafito.id + ".gv")
         # grafito.generar_pesos()
         # kruskal = grafito.KruskalD()
@@ -136,6 +135,7 @@ def main():
         # print(f"MST Prim: {prim.costo()}")
 
        
+        spring(grafito)
 
 if __name__ == "__main__":
         main()
