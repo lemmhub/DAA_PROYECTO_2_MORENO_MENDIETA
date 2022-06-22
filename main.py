@@ -8,7 +8,7 @@ from Clases.Disposiciones import *
 def main():
     path = ("C:\\Users\\Precision\\Desktop\\PROYECTO_1\\PROYECTO_4_MORENO_MENDIETA\\GV_FILES")
 
-    Nodos_totales=[500]
+    Nodos_totales=[100]
     for nodos in Nodos_totales:
         m_erdos = random.randint(nodos+1,nodos*2)
         p_gilbert = random.uniform(0.1,1)
@@ -63,7 +63,7 @@ def main():
 
 
 
-        grafito = grafoGilbert(nodos, p_gilbert, dirigido=False, auto=False)
+        #grafito = grafoGilbert(nodos, p_gilbert, dirigido=False, auto=False)
         # grafito.to_graphviz(path + grafito.id + ".gv")
         # grafito.generar_pesos()
         # kruskal = grafito.KruskalD()
@@ -83,7 +83,7 @@ def main():
 
 
 
-        # grafito = grafoGeografico(nodos, r_geografico)
+        #grafito = grafoGeografico(nodos, r_geografico)
         # grafito.to_graphviz(path + grafito.id + ".gv")
         # grafito.generar_pesos()
         # kruskal = grafito.KruskalD()
@@ -102,7 +102,7 @@ def main():
 
 
 
-        # grafito = grafoBarabasiAlbert(nodos, d_barabasi, auto=False)
+        grafito = grafoBarabasiAlbert(nodos, d_barabasi, auto=False)
         # grafito.to_graphviz(path + grafito.id + ".gv")
         # grafito.generar_pesos()
         # kruskal = grafito.KruskalD()
@@ -120,7 +120,7 @@ def main():
 
 
 
-        # grafito = grafoDorogovtsevMendes(nodos, dirigido=False)
+        #grafito = grafoDorogovtsevMendes(nodos, dirigido=False)
         # grafito.to_graphviz(path + grafito.id + ".gv")
         # grafito.generar_pesos()
         # kruskal = grafito.KruskalD()
