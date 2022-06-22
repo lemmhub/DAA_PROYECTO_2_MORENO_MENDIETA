@@ -17,4 +17,5 @@ class Arista(object):
     def agregar_peso(self, peso):
         self.attrs['peso'] = peso
 
-   
+    def __iter__ (self):
+        return Arista(self.u,self.v)
